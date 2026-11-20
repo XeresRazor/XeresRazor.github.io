@@ -15,6 +15,7 @@ Add an object to the array in `customizers.json`. The page renders cards from it
   "url": "/Cadovafinity/",
   "tags": ["Gridfinity", "bin", "lid"],
   "source": "https://github.com/XeresRazor/Cadovafinity",
+  "version": "0.1.0",
   "updated": "2026-11-20"
 }
 ```
@@ -26,6 +27,7 @@ Fields:
 - `url` (required): where the customizer is published, for example `/Cadovafinity/`.
 - `tags` (required): array of short strings shown as pills.
 - `source` (optional): repository URL, shown as a "Source code" link.
+- `version` (optional): the customizer's release version, shown as a badge next to the title. With `source` set, the card also links to `<source>/releases/tag/<version>` as "Release notes", so the version must match a release tag in that repository.
 - `updated` (optional): free-form date text, shown as "Updated ...".
 
 The `<noscript>` list in `index.html` and the fallback in `script.js` link to the first customizer only. Add new ones there too if the page should work fully without JavaScript.

@@ -1,9 +1,15 @@
 [
   {
     "title": "Gridfinity lidded bin",
-    "description": "A Gridfinity bin with a sliding lid. Choose the grid size, height, dividers, finger grips and lid direction, tune the lid fit, pick colors for multi-color printing, and download the bin and lid as 3MF.",
+    "description": "A Gridfinity bin with a sliding lid. Choose the grid size, height, compartments, finger grips and lid direction, tune the lid fit, pick colors for multi-color printing, and download the bin and lid as 3MF.",
     "url": "/Cadovafinity/",
-    "tags": ["Gridfinity", "bin", "lid"],
-    "source": "https://github.com/XeresRazor/Cadovafinity"
+    "tags": [
+      "Gridfinity",
+      "bin",
+      "lid"
+    ],
+    "source": "https://github.com/XeresRazor/Cadovafinity",
+    "version": "0.1.0",
+    "updated": "2026-11-20"
   }
 ]

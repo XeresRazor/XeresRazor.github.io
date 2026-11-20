@@ -19,6 +19,12 @@
     var a = el("a", "card-link", String(item.title || "Untitled"));
     a.href = String(item.url || "#");
     h.appendChild(a);
+    if (item.version) {
+      h.appendChild(document.createTextNode(" "));
+      var v = el("span", "version", "v" + String(item.version));
+      v.setAttribute("title", "Version " + String(item.version));
+      h.appendChild(v);
+    }
     li.appendChild(h);
 
     if (item.description) li.appendChild(el("p", "card-desc", String(item.description)));
@@ -36,6 +42,13 @@
       var s = el("a", "card-source", "Source code");
       s.href = String(item.source);
       meta.appendChild(s);
+      hasMeta = true;
+    }
+    if (item.source && item.version) {
+      if (hasMeta) meta.appendChild(document.createTextNode(" · "));
+      var r = el("a", "card-source", "Release notes");
+      r.href = String(item.source).replace(/\/+$/, "") + "/releases/tag/" + encodeURIComponent(String(item.version));
+      meta.appendChild(r);
       hasMeta = true;
     }
     if (item.updated) {
