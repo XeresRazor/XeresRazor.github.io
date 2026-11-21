@@ -12,7 +12,7 @@ Add an object to the array in `customizers.json`. The page renders cards from it
 {
   "title": "Gridfinity lidded bin",
   "description": "A Gridfinity bin with a sliding lid. Choose the grid size, height and more.",
-  "url": "/Cadovafinity/",
+  "url": "/Cadovafinity/bins/lidded/",
   "tags": ["Gridfinity", "bin", "lid"],
   "source": "https://github.com/XeresRazor/Cadovafinity",
   "version": "0.1.0",
@@ -24,13 +24,13 @@ Fields:
 
 - `title` (required): card heading and link text.
 - `description` (required): one or two sentences.
-- `url` (required): where the customizer is published, for example `/Cadovafinity/`.
+- `url` (required): where the customizer is published, for example `/Cadovafinity/bins/lidded/`.
 - `tags` (required): array of short strings shown as pills.
 - `source` (optional): repository URL, shown as a "Source code" link.
 - `version` (optional): the customizer's release version, shown as a badge next to the title. With `source` set, the card also links to `<source>/releases/tag/<version>` as "Release notes", so the version must match a release tag in that repository.
 - `updated` (optional): free-form date text, shown as "Updated ...".
 
-The `<noscript>` list in `index.html` and the fallback in `script.js` link to the first customizer only. Add new ones there too if the page should work fully without JavaScript.
+The `<noscript>` list in `index.html` and the fallback in `script.js` list each customizer by hand. Add new ones to both places too if the page should work fully without JavaScript.
 
 ## Previewing locally
 
@@ -38,7 +38,7 @@ The `<noscript>` list in `index.html` and the fallback in `script.js` link to th
 python3 -m http.server
 ```
 
-Then open http://localhost:8000/. The site must be served over HTTP, since `fetch` does not work from `file://`. Customizer links such as `/Cadovafinity/` are site-root paths, so they will not resolve in a local preview unless that customizer is served there.
+Then open http://localhost:8000/. The site must be served over HTTP, since `fetch` does not work from `file://`. Customizer links such as `/Cadovafinity/bins/lidded/` are site-root paths, so they will not resolve in a local preview unless that customizer is served there.
 
 ## GitHub Pages
 

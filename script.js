@@ -63,13 +63,18 @@
   function showError() {
     var box = el("li", "message");
     box.setAttribute("role", "alert");
-    box.appendChild(el("p", "", "The list of designs could not be loaded. Here is a direct link instead."));
+    box.appendChild(el("p", "", "The list of designs could not be loaded. Here are direct links instead."));
     var ul = el("ul", "plain-list");
-    var li = el("li");
-    var a = el("a", "", "Gridfinity lidded bin");
-    a.href = "/Cadovafinity/";
-    li.appendChild(a);
-    ul.appendChild(li);
+    [
+      ["Gridfinity lidded bin", "/Cadovafinity/bins/lidded/"],
+      ["Gridfinity baseplate", "/Cadovafinity/baseplate/"]
+    ].forEach(function (entry) {
+      var li = el("li");
+      var a = el("a", "", entry[0]);
+      a.href = entry[1];
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
     box.appendChild(ul);
     list.appendChild(box);
   }

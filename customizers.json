@@ -2,7 +2,7 @@
   {
     "title": "Gridfinity lidded bin",
     "description": "A Gridfinity bin with a sliding lid. Choose the grid size, height, compartments, finger grips and lid direction, tune the lid fit, pick colors for multi-color printing, and download the bin and lid as 3MF.",
-    "url": "/Cadovafinity/",
+    "url": "/Cadovafinity/bins/lidded/",
     "tags": [
       "Gridfinity",
       "bin",
@@ -10,6 +10,17 @@
     ],
     "source": "https://github.com/XeresRazor/Cadovafinity",
     "version": "0.1.0",
+    "updated": "2026-11-20"
+  },
+  {
+    "title": "Gridfinity baseplate",
+    "description": "A Gridfinity baseplate for your bins. Choose a thin, weighted, skeletonized or screw-together plate, size it by grid cells or to fit a drawer, add magnet and screw holes, and download it as 3MF.",
+    "url": "/Cadovafinity/baseplate/",
+    "tags": [
+      "Gridfinity",
+      "baseplate"
+    ],
+    "source": "https://github.com/XeresRazor/Cadovafinity",
     "updated": "2026-11-20"
   }
 ]
